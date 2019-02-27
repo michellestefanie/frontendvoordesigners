@@ -4,11 +4,53 @@ body {
 font-family: 'Open Sans', sans-serif;
 }
 
-
 section:nth-of-type(2) {
   line-height: 0;
   column-count: 3;
   column-gap: 0.5em;
+}
+
+h1 {
+  color: pink;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: lighter;
+  padding: 0;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin-bottom: 2em;
+}
+
+fieldset legend {
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0;
+  margin-bottom: 0.5em;
+}
+
+label {
+  height: 1em;
+  width: 1em;
+  border: 0.4em solid red;
+
+}
+
+label[for="roze"] {
+  background-color: pink;
+}
+
+label[for="zwart"] {
+  background-color: black;
+  color: white;
+}
+
+input {
+  margin-left: -100%;
+  margin-right: 100%;
 }
 
 img {
@@ -16,8 +58,14 @@ img {
   margin-bottom: 0.5em;
 }
 
-
-
 .show {
+  display: block;
+}
+.zwart img.zwart,
+.roze img.roze {
+  display: none;
+}
+
+.roze, .zwart {
   display: block;
 }
