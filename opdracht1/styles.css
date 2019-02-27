@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 body {
-font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 section:nth-of-type(2) {
@@ -32,25 +32,32 @@ fieldset legend {
   margin-bottom: 0.5em;
 }
 
-input#roze:checked + label[for="roze"] {
-  background-color: yellow;  
-}
-
 label {
-  height: 1em;
-  width: 1em;
-  border: 0.4em solid red;
+  height: auto;
+  width: 4em;
+  text-align: center;
   cursor: pointer;
+  display: inline-block;
 }
 
+/* label is nu roze */
 label[for="roze"] {
   background-color: pink;
+  border: 0.4em solid pink;
 }
 
+/* roze label is nu niet gecheckt */
+
+
+/* label is nu zwart */
 label[for="zwart"] {
   background-color: black;
+  border: 0.4em solid black;
   color: white;
 }
+
+
+/* zwarte label is nu niet gecheckt */
 
 input {
   margin-left: -100%;
