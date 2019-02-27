@@ -5,6 +5,7 @@ Bijvoorbeel bij de demo van versie in kun je zo een link maken, zodat iedereen d
 
 [Demo 1 voor opdracht 1](https://michellestefanie.github.io/frontendvoordesigners/opdracht1/v1/)
 
-Je kan ook een link plaatsen naar de bron code van de demo:
+Ik heb de de opdracht filteren van foto's op kleur gekozen. Daarbij heb ik de formulier gemaakt met daarin een checkbox waar de gebruiker op kan klikken.
 
-[Code demo 1 voor opdracht 1](https://github.com/KoopReynders/frontendvoordesigners/blob/master/opdracht1/v1/)
+
+met javascript en css heb ik de checkboxen werkend gemaakt door een addEventListener toe tevoegen in javascript waarop de knoppen reageren als je ze aanklikt. In css geef ik weer dat wanneer er op een knop geklikt wordt die foto's weergegeven worden.
