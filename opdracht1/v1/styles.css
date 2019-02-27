@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+font-family: 'Open Sans', sans-serif;
+}
+
+
+section:nth-of-type(2) {
+  line-height: 0;
+  column-count: 3;
+  column-gap: 0.5em;
+}
+
+img {
+  width: 100%;
+  margin-bottom: 0.5em;
+}
+
+
+
+.show {
+  display: block;
+}
