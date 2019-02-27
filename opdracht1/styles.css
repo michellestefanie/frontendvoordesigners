@@ -32,11 +32,15 @@ fieldset legend {
   margin-bottom: 0.5em;
 }
 
+input#roze:checked + label[for="roze"] {
+  background-color: yellow;  
+}
+
 label {
   height: 1em;
   width: 1em;
   border: 0.4em solid red;
-
+  cursor: pointer;
 }
 
 label[for="roze"] {
@@ -56,11 +60,9 @@ input {
 img {
   width: 100%;
   margin-bottom: 0.5em;
+  cursor: pointer;
 }
 
-.show {
-  display: block;
-}
 .zwart img.zwart,
 .roze img.roze {
   display: none;
