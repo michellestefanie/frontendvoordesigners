@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Opdracht 2</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <h1>Zuid-Afrika 2017</h1>
+
+
+  <!-- Hoe ik de slideshow noem/de slidehow -->
+  <div class="slideshow-container">
+
+    <!-- De foto en tekst  -->
+    <div class="mySlides fade">
+
+      <img src="images/foto1.jpeg">
+      <p>Een mooie waterval</p>
+    </div>
+
+    <div class="mySlides fade">
+
+      <img src="images/foto2.jpeg">
+      <p>Ontmoet Ollie de olifant!</p>
+    </div>
+
+    <div class="mySlides fade">
+
+      <img src="images/foto3.jpeg">
+      <p>Dit is Betsie, Betsie is een struisvogel</p>
+    </div>
+
+    <!-- De pijltjes links en rechts -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+  <!-- De stippen -->
+  <div class="stip">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+</body>
+<script type="text/javascript" src="script.js">
+
+</script>
+
+</html>
