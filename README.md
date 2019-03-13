@@ -7,5 +7,5 @@ Dit is de [online url](https://michellestefanie.github.io/frontendvoordesigners/
 Het vak bestaat uit 3 opdrachten:
 
 1. [Filteren van foto's op kleuren](opdracht1/)
-2. [Opdracht 2](opdracht2/)
+2. [Fotocarrousel van Zuid-Afrika](opdracht2/)
 3. [Opdracht 3](opdracht3/)
