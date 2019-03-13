@@ -5,7 +5,7 @@ Bijvoorbeel bij de demo van versie in kun je zo een link maken, zodat iedereen d
 
 [Demo 1 voor opdracht 2](https://michellestefanie.github.io/frontendvoordesigners/opdracht2/)
 
-Met html heb ik een div gemaakt met daarin de foto's zodat ik het als een slideshow kan programmeren. 
+Met html heb ik een div gemaakt met daarin de foto's zodat ik het als een slideshow kan programmeren.
 
 
 Ik heb dit keer geen meerdere versies gemaakt.
