@@ -55,7 +55,7 @@ img {
 
 /* Zwarte achtergrond bij pijltje*/
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: #ffc0cb;
 }
 
 /* De stippen */
