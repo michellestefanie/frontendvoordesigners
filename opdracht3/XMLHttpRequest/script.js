@@ -12,6 +12,7 @@ var loaderElement = document.querySelector("span");
 var section = document.querySelector('section');
 //console.log("loaderElement",loaderElement);
 
+
 ////https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON
 function showData(jsonObj) {
   var films = jsonObj;
@@ -66,8 +67,6 @@ function showData(jsonObj) {
     }); //end: reviewslezen click
 
 
-
-
     //ALLE DATA KOPPELEN
     filmpiekijken.appendChild(filmtitel);
     filmpiekijken.appendChild(filmplot);
@@ -77,7 +76,6 @@ function showData(jsonObj) {
 
     //HTML INJECTION IN BESTAANDE SECTION
     section.appendChild(filmpiekijken);
-
 
 
 

@@ -6,7 +6,7 @@ body {
 
 section:nth-of-type(2) {
   line-height: 0;
-  column-count: 3;
+  columns: 15em;
   column-gap: 0.5em;
 }
 

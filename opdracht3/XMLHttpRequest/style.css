@@ -1,11 +1,11 @@
 * {
   box-sizing: border-box;
 }
-body{
+body {
   margin:1em;
   font: 2em/1 helvetica;
 }
-span{
+span {
   color: green;
   margin: 0;
   padding: 1em;
@@ -15,15 +15,15 @@ span{
   transition: all 1s ease;
   display: none;
 }
-.show{
+.show {
   display: inline;
 }
-.hide{
+.hide {
   display: none;
 }
 
 /* ************* */
-section ul{
+section ul {
   display: none;
   padding: 0;
   background: pink;
