@@ -1,10 +1,13 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   margin:1em;
   font: 2em/1 helvetica;
 }
+
+
 span {
   color: green;
   margin: 0;
@@ -15,9 +18,52 @@ span {
   transition: all 1s ease;
   display: none;
 }
+
+
 .show {
   display: inline;
 }
+
+section {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/*
+article {
+    width: 33%;
+}
+*/
+
+
+h1 {
+
+    font-size: 3em;
+    color: hotpink;
+}
+
+h2, h3, h4 {
+font-size: .8em;
+    color: green;
+}
+
+p {
+
+    font-size: .5em;
+    color: aqua;
+}
+
+img {
+    width: 5em;
+}
+
+li, ul {
+    font-size: .8em;
+    list-style: none;
+
+}
+
 .hide {
   display: none;
 }

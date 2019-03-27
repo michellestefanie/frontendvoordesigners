@@ -1,12 +1,5 @@
-
 //script.js
-//console.log(this);
-//var uri = "https://api.data.amsterdam.nl/panorama/recente_opnames/2018/?format=json";
-//var uri = "https://open.data.amsterdam.nl/Attracties.json";
-//var uri = "https://open.data.amsterdam.nl/Activiteiten.json";
-//var uri = "https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json";
-//var uri = "http://dennistel.nl/movies"; //online, geen https
-var uri = 'https://koopreynders.github.io/frontendvoordesigners/opdracht3/json/movies.json'; //json file op github
+var uri = 'movies.json'; //json file op github
 var button = document.querySelector("button");
 var loaderElement = document.querySelector("span");
 var section = document.querySelector('section');
@@ -23,20 +16,36 @@ function showData(jsonObj) {
     var filmpiekijken = document.createElement('article');
 
     //TITEL, COVER EN BESCHRIJVING
-    var filmtitel = document.createElement('h2');
-      filmtitel.textContent = films[i].title;
-    var filmplot = document.createElement('p');
-      filmplot.textContent = films[i].simple_plot;
     var filmcover = document.createElement('img');
-      filmcover.src = films[i].cover;
+      filmcover.src = films[i].filmcover;
     //myImg.textContent = films[i].cover;
     //console.log(filmcover.src);
 
+    var filmtitel = document.createElement('h2');
+      filmtitel.textContent = films[i].filmtitel;
+
+    var genre = document.createElement('h3');
+      genre.textContent = films[i].genre;
+
+//    var release_date = document.createElement('');
+//      release_date.textContent = films[i].release_date;
+
+    var simple_plot = document.createElement('p');
+      simple_plot.textContent = films[i].simple_plot;
+
+
     //GENRES
-    var genres = films[i].genres;
+    var genre = films[i].genre;
     for (var n = 0; n < genres.length; n++) {
-      console.log("genre: ",genres[n]);
+      console.log("genre: ",genre[n]);
     } //end for genres
+
+
+      //Plot en trailer
+     var plot = document.createElement('p');
+      plot.textContent = films[i].plot;
+
+
 
     //REVIEWS
     var reviewslezen = document.createElement('ul');
@@ -68,9 +77,13 @@ function showData(jsonObj) {
 
 
     //ALLE DATA KOPPELEN
-    filmpiekijken.appendChild(filmtitel);
-    filmpiekijken.appendChild(filmplot);
     filmpiekijken.appendChild(filmcover);
+    filmpiekijken.appendChild(filmtitel);
+//    filmpiekijken.appendChild(genre);
+//    filmpiekijken.appendChild(release_date);
+    filmpiekijken.appendChild(simple_plot);
+//    filmpiekijken.appendChild(plot);
+//    filmpiekijken.appendChild(trailer);
     filmpiekijken.appendChild(reviewsbutton);
     filmpiekijken.appendChild(reviewslezen);
 
@@ -116,6 +129,7 @@ function loadimagesmetXHR(){
 //actie
 button.onclick = function(){
   loaderElement.classList.add('show');
+    button.classList.add('hide');
   //this.classList.add('hide');
   //hier iets doen met de button die laadt, dan weer gewoon een button wordt ...
 

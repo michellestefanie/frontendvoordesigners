@@ -1,0 +1,98 @@
+* {
+
+    font-family: sans-serif;
+    background-color: black;
+    margin: 0;
+
+}
+
+
+span {
+  color: green;
+  margin: 0;
+  padding: 1em;
+  width: calc(6 * 450px);
+  list-style-position: inside;
+  background: DARKSEAGREEN;
+  transition: all 1s ease;
+  display: none;
+}
+
+
+.show {
+  display: inline;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em;
+    justify-items: center;
+
+
+}
+
+img {
+    margin-left: 1em;
+    width: 10em;
+    border: .5em;
+    border-color: aqua;
+}
+
+h1 {
+    margin: 1em 0 1em .3em;
+    font-size: 3em;
+    color: hotpink;
+}
+
+h2 {
+    margin-left: 1em;
+    margin-top: 1em;
+    padding: 0;
+    font-size: 1em;
+    color: hotpink;
+}
+
+
+p {
+    margin-left: 1em;
+    margin-top: 1em;
+    width: 70%;
+    margin-bottom: .5em;
+    font-size: .8em;
+    color: #fff;
+
+}
+
+button {
+    cursor: pointer;
+  padding: 1em;
+    margin-left: 1em;
+    margin-top: 1em;
+  color: #fff;
+    background-color: hotpink;
+  font-weight: bold;
+  font-size: 1em;
+  transition: 0.6s ease;
+}
+
+li, ul {
+    margin-left: 1.6em;
+    margin-top: 1em;
+    font-size: .8em;
+    list-style: none;
+    color: hotpink;
+    margin-top: 1em;
+
+}
+
+.hide {
+  display: none;
+}
+
+/* ************* */
+section ul {
+  display: none;
+  padding: 0;
+  background: yellow;
+}
