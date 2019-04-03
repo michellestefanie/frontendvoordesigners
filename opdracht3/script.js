@@ -33,6 +33,9 @@ function showData(jsonObj) {
     var simple_plot = document.createElement('p');
       simple_plot.textContent = films[i].simple_plot;
 
+    var release_date = document.createElement('p');
+      release_date.textContent = films[i].release_date;
+
     var genre = document.createElement('p');
       genre.textContent = films[i].genre;
 
@@ -40,6 +43,17 @@ function showData(jsonObj) {
       //Plot en trailer
      var plot = document.createElement('p');
       plot.textContent = films[i].plot;
+
+      var meerLezen = document.createElement('p');
+    var lees = document.createElement('button');
+      lees.textContent = "Meer lezen";
+
+      meerLezen.textContent = films[i].plot;
+      lees.info = meerLezen;
+      lees.onclick = function(){
+          console.log('Click this =' + this.info, this);
+          this.info.classList.toggle('show')
+      }
 
 
 
@@ -75,13 +89,16 @@ function showData(jsonObj) {
     //ALLE DATA KOPPELEN
     filmpiekijken.appendChild(filmcover);
     filmpiekijken.appendChild(filmtitel);
+    filmpiekijken.appendChild(release_date);
     filmpiekijken.appendChild(genre);
 //    filmpiekijken.appendChild(release_date);
     filmpiekijken.appendChild(simple_plot);
 //    filmpiekijken.appendChild(plot);
 //    filmpiekijken.appendChild(trailer);
-    filmpiekijken.appendChild(reviewsbutton);
-    filmpiekijken.appendChild(reviewslezen);
+//    filmpiekijken.appendChild(reviewsbutton);
+//    filmpiekijken.appendChild(reviewslezen);
+    filmpiekijken.appendChild(lees);
+    filmpiekijken.appendChild(meerLezen);
 
     //HTML INJECTION IN BESTAANDE SECTION
     section.appendChild(filmpiekijken);
