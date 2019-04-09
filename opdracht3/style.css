@@ -12,7 +12,7 @@
 .action main section > article:nth-of-type(4),
 .action main section > article:nth-of-type(6),
 .action main section > article:nth-of-type(7),
-.action main section > article:nth-of-type(8){
+.action main section > article:nth-of-type(8) {
     display: none;
 }
 
@@ -30,14 +30,14 @@
 .crime main section > article:nth-of-type(1),
 .crime main section > article:nth-of-type(5),
 .crime main section > article:nth-of-type(6),
-.crime main section > article:nth-of-type(7){
+.crime main section > article:nth-of-type(7) {
     display: none;
 }
 
 
 .drama main section > article:nth-of-type(1),
 .drama main section > article:nth-of-type(5),
-.drama main section > article:nth-of-type(7){
+.drama main section > article:nth-of-type(7) {
     display: none;
 }
 
@@ -47,7 +47,7 @@
 .horror main section > article:nth-of-type(4),
 .horror main section > article:nth-of-type(5),
 .horror main section > article:nth-of-type(6),
-.horror main section > article:nth-of-type(8){
+.horror main section > article:nth-of-type(8) {
     display: none;
 }
 
@@ -58,65 +58,66 @@
 .thriller main section > article:nth-of-type(5),
 .thriller main section > article:nth-of-type(6),
 .thriller main section > article:nth-of-type(7),
-.thriller main section > article:nth-of-type(8){
+.thriller main section > article:nth-of-type(8) {
     display: none;
 }
 
 
 
 span {
-  color: green;
-  margin: 0;
-  padding: 1em;
-  width: calc(6 * 450px);
-  list-style-position: inside;
-  transition: all 1s ease;
-  display: none;
+    color: green;
+    margin: 0;
+    padding: 1em;
+    width: calc(6 * 450px);
+    list-style-position: inside;
+    transition: all 1s ease;
+    display: none;
 }
 
 
 .show {
-  display: flex;
-  transition: 2s;
-}
-
-.menu {
-  justify-content: space-around;
-align-items: center;
-  padding: 0;
+    display: flex;
+    transition: 2s;
 }
 
 header ul {
     display: none;
-
 }
 
 
+.menu {
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+}
+
+
+
 .menu-item a {
-  color: #fff;
-  font-size: 2em;
+    color: #fff;
+    font-size: 2em;
     font-weight: bolder;
-  text-decoration: none;
-  transition: all 0.8s ease;
+    text-decoration: none;
+    transition: all 0.8s ease;
 }
 
 
 .genres a {
     color: violet;
-  font-size: 2em;
-  font-weight: bolder;
-  text-decoration: none;
-  transition: all 0.8s ease;
+    font-size: 2em;
+    font-weight: bolder;
+    text-decoration: none;
+    transition: all 0.8s ease;
 }
 
 .menu-item a:hover {
-  color: hotpink;
+    color: hotpink;
 }
 
 
 section {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 1em;
     justify-items: center;
 
@@ -133,7 +134,7 @@ img {
 
 img:hover {
     width: 110%;
-    box-shadow: 0 1em 1em 0 rgba(255, 255, 255, 0.2),
+
 }
 
 
@@ -175,8 +176,8 @@ p:nth-of-type(2) {
 }
 
 button {
-   cursor: pointer;
-  padding: 1em;
+    cursor: pointer;
+    padding: 1em;
     border-radius: 1em;
     border-style: none;
 
@@ -184,15 +185,15 @@ button {
     margin-left: auto;
     margin-right: auto;
     margin-top: 1em;
-  color: #fff;
-  background-color: hotpink;
-  font-weight: bold;
-  font-size: 1em;
-  transition: 0.6s ease;
+    color: #fff;
+    background-color: hotpink;
+    font-weight: bold;
+    font-size: 1em;
+    transition: 0.6s ease;
 }
 
-li, ul {
-/*    margin-left: 1.6em;*/
+li,
+ul {
     margin-top: 1em;
     font-size: .8em;
     list-style: none;
@@ -211,20 +212,20 @@ article {
 }
 
 
-article > p:nth-of-type(4){
+article > p:nth-of-type(4) {
     display: none;
 
 }
 
-article > p.show:nth-of-type(4){
+article > p.show:nth-of-type(4) {
     display: inline-block;
 }
 
 .hide {
-  display: none;
+    display: none;
 }
 
 
 section ul {
-  display: none;
+    display: none;
 }
