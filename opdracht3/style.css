@@ -82,8 +82,8 @@ span {
 
 .menu {
   justify-content: space-around;
-  align-items: center;
-    padding: 0;
+align-items: center;
+  padding: 0;
 }
 
 header ul {
@@ -101,6 +101,14 @@ header ul {
 }
 
 
+.genres a {
+    color: violet;
+  font-size: 2em;
+  font-weight: bolder;
+  text-decoration: none;
+  transition: all 0.8s ease;
+}
+
 .menu-item a:hover {
   color: hotpink;
 }
@@ -112,18 +120,6 @@ section {
     grid-gap: 1em;
     justify-items: center;
 
-}
-
-@media (max-width: 700px) {
-  section {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 450px) {
-  section {
-    grid-template-columns: repeat(1, 1fr);
-  }
 }
 
 
