@@ -3,6 +3,7 @@ var uri = 'movies.json'; //json file op github
 var button = document.querySelector("button");
 var loaderElement = document.querySelector("span");
 var section = document.querySelector('section');
+var header = document.querySelector('header ul');
 //console.log("loaderElement",loaderElement);
 
 
@@ -14,6 +15,7 @@ function showData(jsonObj) {
   for (var i = 0; i < films.length; i++) {
     console.log("film " + i);
     var filmpiekijken = document.createElement('article');
+
 
     //TITEL, COVER EN BESCHRIJVING
     var filmcover = document.createElement('img');
@@ -54,7 +56,6 @@ function showData(jsonObj) {
           console.log('Click this =' + this.info, this);
           this.info.classList.toggle('show')
       }
-
 
 
     //REVIEWS
@@ -145,7 +146,7 @@ button.onclick = function(){
     button.classList.add('hide');
   //this.classList.add('hide');
   //hier iets doen met de button die laadt, dan weer gewoon een button wordt ...
-
+    header.classList.add("show");
   section.innerHTML = ""; //main leeghalen. just in case
   loadimagesmetXHR();
 };
@@ -171,6 +172,7 @@ function loadRestApiFetch(){ //Rest Api call met Fetchs
 
       return response.json();
     })
+
     .then(function(myJson) {
       console.log('Request successful', myJson);
       //eerst de loader weg halen !

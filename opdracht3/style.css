@@ -6,6 +6,63 @@
 
 }
 
+.action main section > article:nth-of-type(1),
+.action main section > article:nth-of-type(2),
+.action main section > article:nth-of-type(3),
+.action main section > article:nth-of-type(4),
+.action main section > article:nth-of-type(6),
+.action main section > article:nth-of-type(7),
+.action main section > article:nth-of-type(8){
+    display: none;
+}
+
+.adventure main section > article:nth-of-type(1),
+.adventure main section > article:nth-of-type(2),
+.adventure main section > article:nth-of-type(3),
+.adventure main section > article:nth-of-type(4),
+.adventure main section > article:nth-of-type(6),
+.adventure main section > article:nth-of-type(7),
+.adventure main section > article:nth-of-type(8) {
+    display: none;
+}
+
+
+.crime main section > article:nth-of-type(1),
+.crime main section > article:nth-of-type(5),
+.crime main section > article:nth-of-type(6),
+.crime main section > article:nth-of-type(7){
+    display: none;
+}
+
+
+.drama main section > article:nth-of-type(1),
+.drama main section > article:nth-of-type(5),
+.drama main section > article:nth-of-type(7){
+    display: none;
+}
+
+
+.horror main section > article:nth-of-type(2),
+.horror main section > article:nth-of-type(3),
+.horror main section > article:nth-of-type(4),
+.horror main section > article:nth-of-type(5),
+.horror main section > article:nth-of-type(6),
+.horror main section > article:nth-of-type(8){
+    display: none;
+}
+
+
+.thriller main section > article:nth-of-type(1),
+.thriller main section > article:nth-of-type(2),
+.thriller main section > article:nth-of-type(3),
+.thriller main section > article:nth-of-type(5),
+.thriller main section > article:nth-of-type(6),
+.thriller main section > article:nth-of-type(7),
+.thriller main section > article:nth-of-type(8){
+    display: none;
+}
+
+
 
 span {
   color: green;
@@ -13,30 +70,56 @@ span {
   padding: 1em;
   width: calc(6 * 450px);
   list-style-position: inside;
-  background: DARKSEAGREEN;
   transition: all 1s ease;
   display: none;
 }
 
 
 .show {
-  display: inline;
-    transition: 2s;
+  display: flex;
+  transition: 2s;
 }
+
+.menu {
+  justify-content: space-around;
+  align-items: center;
+    padding: 0;
+}
+
+header ul {
+    display: none;
+
+}
+
+
+.menu-item a {
+  color: #fff;
+  font-size: 2em;
+    font-weight: bolder;
+  text-decoration: none;
+  transition: all 0.8s ease;
+}
+
+
+.menu-item a:hover {
+  color: hotpink;
+}
+
 
 section {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-    grid-gap: 2em;
+  grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1em;
     justify-items: center;
 
 }
 
 @media (max-width: 700px) {
   section {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
+
 @media (max-width: 450px) {
   section {
     grid-template-columns: repeat(1, 1fr);
@@ -45,16 +128,22 @@ section {
 
 
 img {
-    width: 10em;
+    width: 100%;
     border: .5em;
     border-color: aqua;
+    transition: all .8s ease;
+    cursor: pointer;
+}
+
+img:hover {
+    width: 110%;
+    box-shadow: 0 1em 1em 0 rgba(255, 255, 255, 0.2),
 }
 
 
-
 h1 {
-    margin-left: .25em;
-    margin-top: .5em;
+    text-align: center;
+    padding: .2em;
     font-size: 3em;
     color: hotpink;
 }
@@ -65,22 +154,24 @@ h2 {
     font-size: 1em;
     color: hotpink;
     text-transform: uppercase;
+    text-align: left;
 
 }
 
 
 p {
     margin-top: 1em;
-    width: 70%;
+    width: 100%;
     margin-bottom: .5em;
     font-size: .8em;
     color: #fff;
+    text-align: left;
 
 }
 
 p:nth-of-type(2) {
     margin-top: 1em;
-    width: 70%;
+    width: 100%;
     margin-bottom: .5em;
     font-size: .8em;
     color: hotpink;
@@ -90,9 +181,15 @@ p:nth-of-type(2) {
 button {
    cursor: pointer;
   padding: 1em;
+    border-radius: 1em;
+    border-style: none;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 1em;
   color: #fff;
-    background-color: hotpink;
+  background-color: hotpink;
   font-weight: bold;
   font-size: 1em;
   transition: 0.6s ease;
@@ -109,13 +206,18 @@ li, ul {
 }
 
 article {
+
     padding-left: 1em;
+    padding-right: 1em;
+    text-align: center;
+    margin-top: 1em;
 
 }
 
 
 article > p:nth-of-type(4){
     display: none;
+
 }
 
 article > p.show:nth-of-type(4){
