@@ -26,20 +26,15 @@ function showData(jsonObj) {
         var filmtitel = document.createElement('h2');
         filmtitel.textContent = films[i].filmtitel;
 
-        var genre = document.createElement('p');
-        genre.textContent = films[i].genre;
-
-        //    var release_date = document.createElement('');
-        //      release_date.textContent = films[i].release_date;
-
-        var simple_plot = document.createElement('p');
-        simple_plot.textContent = films[i].simple_plot;
-
         var release_date = document.createElement('p');
         release_date.textContent = films[i].release_date;
 
         var genre = document.createElement('p');
         genre.textContent = films[i].genre;
+
+
+        var simple_plot = document.createElement('p');
+        simple_plot.textContent = films[i].simple_plot;
 
 
         //Plot en trailer
@@ -58,7 +53,7 @@ function showData(jsonObj) {
         }
 
 
-        //REVIEWS
+//        REVIEWS
         var reviewslezen = document.createElement('ul');
         var reviewsbutton = document.createElement('button');
         reviewsbutton.textContent = "Lees reviews";
@@ -151,7 +146,17 @@ button.onclick = function () {
     loadimagesmetXHR();
 };
 
-
+window.onkeydown = function (event) {
+    if(event.keyCode==32){
+    loaderElement.classList.add('show');
+    button.classList.add('hide');
+    //this.classList.add('hide');
+    //hier iets doen met de button die laadt, dan weer gewoon een button wordt ...
+    header.classList.add("show");
+    section.innerHTML = ""; //main leeghalen. just in case
+    loadimagesmetXHR();
+    }
+};
 
 
 
